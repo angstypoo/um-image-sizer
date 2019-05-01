@@ -10,7 +10,7 @@ To use this plugin you need to include the file before any other javascript that
  container boundaries, while the smaller will be centered.  "Zoom" ensures that the smaller of the two dimensions will expand to the boundaries of the container, while the larger will be cropped
  with the image remaining centered.
 
- ##### usage exaple:
+ #### usage exaple:
  ```javascript
  var container = document.getElementById( mycountainerid );
  var image = document.getElementById( myimg );
@@ -25,7 +25,7 @@ To use this plugin you need to include the file before any other javascript that
  };
  ```
  
- ##### Alternatively, if you are using jquery:
+ #### Alternatively, if you are using jquery:
 ```javascript
  function imagesizer() {
 	var $container = $('div.class');
