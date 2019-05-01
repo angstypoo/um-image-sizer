@@ -6,9 +6,15 @@ To use this plugin you need to include the file before any other javascript that
  ### Summary
  This utility gives you two methods for resizing images according to a parent container.
  It is intended to be used with a parent container that has predefined dimensions.  It requires the initial dimensions for the image, and the parent dimensions.
- It returns a string formatted for use with cssText.  There are two methods of resizing, zoom and center.  "Center" ensures that the larger of the two dimensions will expand to the
- container boundaries, while the smaller will be centered.  "Zoom" ensures that the smaller of the two dimensions will expand to the boundaries of the container, while the larger will be cropped
- with the image remaining centered.
+ It returns a string formatted for use with cssText.  
+ 
+ #### Resizing Methods
+ There are two methods of resizing, zoom and center.  
+ 
+ "center" ensures that the larger of the two dimensions will expand to the container boundaries, while the smaller will be centered.  
+ 
+ "zoom" ensures that the smaller of the two dimensions will expand to the boundaries of the container, while the larger will be cropped with the image remaining centered.
+ 
 
  #### usage exaple:
  ```javascript
