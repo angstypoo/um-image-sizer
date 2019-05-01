@@ -11,9 +11,9 @@ To use this plugin you need to include the file before any other javascript that
  #### Resizing Methods
  There are two methods of resizing, zoom and center.  
  
- "center" ensures that the larger of the two dimensions will expand to the container boundaries, while the smaller will be centered.  
+ **center** ensures that the larger of the two dimensions will expand to the container boundaries, while the smaller will be centered.  
  
- "zoom" ensures that the smaller of the two dimensions will expand to the boundaries of the container, while the larger will be cropped with the image remaining centered.
+ **zoom** ensures that the smaller of the two dimensions will expand to the boundaries of the container, while the larger will be cropped with the image remaining centered.
  
 
  #### usage exaple:
