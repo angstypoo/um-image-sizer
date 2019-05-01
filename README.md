@@ -11,6 +11,7 @@ To use this plugin you need to include the file before any other javascript that
  with the image remaining centered.
 
  usage exaple:
+ ```javascript
  var container = document.getElementById( mycountainerid );
  var image = document.getElementById( myimg );
  containerwidth = container.offsetWidth;
@@ -22,10 +23,10 @@ To use this plugin you need to include the file before any other javascript that
   image.style.cssText=umis.zoom(containerwidth, containerheight, imagewidth, imageheight);
   //the output will be "'height:'+imgHeight+'px;width:'+imgWidth+'px;margin-left:'+leftmargin+'px;margin-top:'+topmargin+'px;';
  };
- 
+ ```
  
  Alternatively, if you are using jquery:
- 
+  ```javascript
  function imagesizer() {
 	var $container = $('div.class');
     var $containerheight = $container.height();
@@ -43,7 +44,7 @@ To use this plugin you need to include the file before any other javascript that
  $( window ).resize(function() {
    imagesizer();
  });
-  
+ ```
  This example resizes all images according to a specified container
  Note that there is only one container specified-- this assumes that all containers will be the same size to reduce overhead.
  This use case is also good for carousels-- you should specify the active/visibile container as the container dimension reference because height() does not work on elements with display:none
