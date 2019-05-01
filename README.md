@@ -3,14 +3,14 @@ This is a Javascript utility for resizing images inside of a container in the do
 
 To use this plugin you need to include the file before any other javascript that utilizes the utility
 
- ### SUMMARY
+ ### Summary
  This utility gives you two methods for resizing images according to a parent container.
  It is intended to be used with a parent container that has predefined dimensions.  It requires the initial dimensions for the image, and the parent dimensions.
  It returns a string formatted for use with cssText.  There are two methods of resizing, zoom and center.  "Center" ensures that the larger of the two dimensions will expand to the
  container boundaries, while the smaller will be centered.  "Zoom" ensures that the smaller of the two dimensions will expand to the boundaries of the container, while the larger will be cropped
  with the image remaining centered.
 
- usage exaple:
+ ##### usage exaple:
  ```javascript
  var container = document.getElementById( mycountainerid );
  var image = document.getElementById( myimg );
@@ -25,8 +25,8 @@ To use this plugin you need to include the file before any other javascript that
  };
  ```
  
- Alternatively, if you are using jquery:
-  ```javascript
+ ##### Alternatively, if you are using jquery:
+```javascript
  function imagesizer() {
 	var $container = $('div.class');
     var $containerheight = $container.height();
