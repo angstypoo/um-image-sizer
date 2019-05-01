@@ -3,7 +3,7 @@ This is a Javascript utility for resizing images inside of a container in the do
 
 To use this plugin you need to include the file before any other javascript that utilizes the utility
 
-* SUMMARY
+ #SUMMARY
  This utility gives you two methods for resizing images according to a parent container.
  It is intended to be used with a parent container that has predefined dimensions.  It requires the initial dimensions for the image, and the parent dimensions.
  It returns a string formatted for use with cssText.  There are two methods of resizing, zoom and center.  "Center" ensures that the larger of the two dimensions will expand to the
