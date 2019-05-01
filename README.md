@@ -33,24 +33,25 @@ To use this plugin you need to include the file before any other javascript that
  
  #### Alternatively, if you are using jquery:
 ```javascript
- function imagesizer() {
-	var $container = $('div.class');
-    var $containerheight = $container.height();
-    var $containerwidth = $container.width();
-    var $image = $('img.class');
-    $($image).each(function() {
-		var newcss=umis.zoom($containerwidth,$containerheight,this.naturalWidth,this.naturalHeight);
-		this.style.cssText=newcss;
-	});
- }
- $( window ).load(function() {
-   imagesizer();
+function imagesizer() {
+ var $container = $('div.class');
+ var $containerheight = $container.height();
+ var $containerwidth = $container.width();
+ var $image = $('img.class');
+ $($image).each(function() {
+  var newcss=umis.zoom($containerwidth,$containerheight,this.naturalWidth,this.naturalHeight);
+  this.style.cssText=newcss;
  });
+}
 
- $( window ).resize(function() {
-   imagesizer();
- });
- ```
+$( window ).load(function() {
+ imagesizer();
+});
+
+$( window ).resize(function() {
+ imagesizer();
+});
+```
  This example resizes all images according to a specified container
  Note that there is only one container specified-- this assumes that all containers will be the same size to reduce overhead.
  This use case is also good for carousels-- you should specify the active/visibile container as the container dimension reference because height() does not work on elements with display:none
