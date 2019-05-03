@@ -1,7 +1,7 @@
 # um-image-sizer
 This is a Javascript utility for responsively resizing images inside of a container in the dom
 
-To use this plugin you need to include the file before any other javascript that utilizes the utility
+To use this you need to include the file before any other javascript that utilizes the utility
 
  ### Summary
  This utility gives you two methods for resizing images according to a parent container.
